@@ -1,0 +1,23 @@
+/* ******************* */
+/*        Grid         */
+/* ******************* */
+
+body {
+	position: relative;
+	overflow-x: hidden;
+	@if ($lang == "ar") {
+		direction: rtl;
+	}
+}
+#body {
+	overflow: hidden;
+}
+.container {
+	margin: auto;
+}
+
+
+body{
+	background:#ddd;
+
+}

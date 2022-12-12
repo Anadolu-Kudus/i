@@ -1,0 +1,35 @@
+* {
+	box-sizing: border-box;
+	text-decoration: none;
+	outline: none;
+}
+a {
+	text-decoration: none;
+	transition: 0.3s all linear !important;
+}
+
+.pt80 {
+	padding-top: 85px;
+	overflow: hidden;
+}
+
+.hofw-white,
+.hofw {
+	letter-spacing: 1px;
+	text-transform:capitalize ;
+}
+
+// headers of my website in white color
+.hofw-white {
+	@include text-shadow(2.5px, 1.5px, $mc);
+
+	color: white;
+}
+
+// headers of my website in main color
+.hofw {
+	text-align: center !important;
+	@include text-shadow(0.5px, 1.5px, $mcf);
+
+	color: $mc;
+}

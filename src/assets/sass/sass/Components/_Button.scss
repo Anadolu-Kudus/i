@@ -1,0 +1,22 @@
+%button{
+	padding:7.5px 15px;
+	border-radius: 5px;
+	position:relative;
+	overflow:hidden;
+	color:white;
+	z-index: 1;
+	border:none;
+	font-weight:bold;
+	background-color: $mc;
+	transition: .35s all linear  ;
+text-transform: capitalize;
+
+	&:focus{border:none; outline:none;}
+
+	&:hover{
+					background-color:rgba($mc , 0.85);
+					transform:scale(.9);
+	}
+
+
+}

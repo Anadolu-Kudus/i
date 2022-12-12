@@ -1,0 +1,13 @@
+/* ******************* */
+/*      Variable       */
+/* ******************* */
+
+// $mc : #0c1836;
+
+// $mc : purple;
+$sc: #eee;
+$mcf: rgba($mc, 0.8);
+
+$t45: linear-gradient(315deg, $mcf, $mc, $mc, $mcf, $mc, $mc, $mcf);
+// linear gradiant in white for button
+$blg: linear-gradient(315deg, #ddd, #fff, #ddd);

@@ -1,0 +1,133 @@
+nav.navbar {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+
+	background-color: $sc;
+	padding: 15px 0px;
+	background: $mc ;
+
+	@media screen and (max-width: 991px) {
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		z-index: 100000;
+	}
+
+	.navbar-brand {
+		display: inline-block;
+		vertical-align: middle;
+		-webkit-transform: perspective(1px) translateZ(0);
+		transform: perspective(1px) translateZ(0);
+		box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+		-webkit-transform-origin: 0 100%;
+		transform-origin: 0 100%;
+		font-weight: bold;
+		@media screen and (max-width:767px) {
+			font-size:17px !important;
+		}
+
+		@if ($lang == "en") {
+			font-family: "Lemonada", cursive !important;
+		}
+	
+
+
+		&:hover,
+		&:focus {
+			animation-name: hvr-wobble-top;
+			animation-duration: 1s;
+			animation-timing-function: ease-in-out;
+			animation-iteration-count: 1;
+		}
+		img {
+			width: 40px !important;
+			height: 40px !important;
+		}
+	}
+	.navbar-toggler {
+		border-color: transparent !important;
+		&:focus {
+			box-shadow: initial !important;
+		}
+	}
+	.navbar-collapse {
+		overflow: hidden;
+		flex-grow: initial;
+		.nav-item {
+			font-weight: bold;
+			font-size: 14px;
+			display: flex;
+			justify-content: center;
+			align-content: center;
+			@media screen and (max-width: 991px) {
+				text-align: center;
+				padding: 5px 0px !important;
+			}
+			@media screen and (min-width: 992px) {
+				padding: 0px 5px;
+			}
+			.nav-link {
+				@extend %hvr-underline-from-center;
+			}
+		}
+
+		a {
+			text-transform: uppercase;
+		}
+	}
+	.btn-lang {
+		.lang {
+			min-width: 30px;
+			min-height: 30px;
+			padding: 3px;
+
+			text-transform: capitalize;
+
+			display: flex;
+			text-align: center;
+			justify-content: center;
+			align-items: center;
+			align-content: center;
+			border-radius: 5px;
+			color: $mc;
+			background: $blg;
+			font-weight: bold;
+			@if ($lang== "ar") {
+				flex-direction: row-reverse !important;
+				&::after{
+					margin-left: 0.255em !important;
+				}
+			}
+			// &:hover {
+			//     // transform: rotate(360deg) !important;
+			// }
+		}
+		.dropdown-item {
+			font-weight: bold;
+		}
+		.dropdown-item:focus,
+		.dropdown-item:hover {
+			background-color: #ddd;
+		}
+		.dropdown-item.active,
+		.dropdown-item:active {
+			background: #ddd;
+			color: black;
+		}
+	}
+}
+.navbar-dark .navbar-nav .nav-link {
+	color: $sc !important;
+	@if ($lang== "ar") {
+		font-size: 16px !important;
+	}
+	&:hover {
+		color: $sc !important;
+	}
+}

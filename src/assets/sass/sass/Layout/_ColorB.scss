@@ -1,0 +1,77 @@
+// color container
+.color-container {
+	width: fit-content;
+	position: fixed;
+	top: 100px;
+
+	display: flex;
+	flex-wrap: nowrap;
+	transition: 0.3s all linear;
+	z-index: 1000;
+
+	@if ($lang == "ar") {
+		right: initial;
+		left: 10px !important;
+	} @else {
+		right: 10px;
+		left: initial !important;
+	}
+
+	span#control-color-theme {
+		display: block;
+		border-radius: 50%;
+		cursor: pointer;
+
+		padding: 5px;
+		transition: 0.3s all linear;
+
+		background-color: $mc;
+		@include box-shadow(1px, 3px, rgba(#ddd, .8));
+		svg {
+			width: 35px;
+			height: 35px;
+		}
+	}
+
+	div.collor {
+		width: 0px;
+		opacity: 0;
+
+		background-color: rgba(white, 1);
+		display: flex;
+		flex-wrap: nowrap;
+
+		align-items: center;
+		align-content: center;
+
+		height: 45px;
+		border-radius: 40px 20px 20px 40px;
+		overflow: hidden;
+
+		transition: 0.3s all linear;
+
+		span {
+			$v: 25px;
+			width: $v;
+			height: $v;
+			display: inline-block;
+			margin: 5px;
+			border-radius: 50%;
+			cursor: pointer;
+			transition: 0.3s all linear;
+			&:hover {
+				transform: scale(1.17);
+			}
+		}
+	}
+
+	.open-collor {
+		transition: 0.3s all linear;
+		width: 175px !important;
+		opacity: 1 !important;
+	}
+	.rotate-control {
+		transition: 0.3s all linear;
+		transform: rotateZ(180deg);
+	}
+}

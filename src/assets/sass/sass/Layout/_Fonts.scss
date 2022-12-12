@@ -1,0 +1,41 @@
+/* ******************* */
+/*        Font         */
+/* ******************* */
+
+@if ($lang== "ar") {
+	* {
+		font-family: "Cairo", sans-serif;
+	}
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-weight: bold;
+	}
+	body {
+		span.fas,
+		i.fas {
+			font-family: "Font Awesome 5 Free" !important;
+		}
+		span.fab,
+		i.fab {
+			font-family: "Font Awesome 5 Brands" !important;
+		}
+	}
+} @else {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: "Lemonada", cursive;
+		font-weight: bold;
+		text-transform: capitalize !important;
+	}
+	.hnv {
+		font-family: "Cairo", sans-serif !important;
+	}
+}

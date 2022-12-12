@@ -1,0 +1,27 @@
+html[lang="en"],
+html[lang="tr"]  {
+@import "./sass/Lang/En";
+@import "./sass/Mode/Default";
+
+@import "./sass/Helpers/Variables";
+@import "./sass/Helpers/Mixins";
+@import "./sass/Helpers/Extend";
+@import "./sass/Helpers/Functions";
+
+@import "./sass/Layout/Cover";
+@import "./sass/Layout/Fonts";
+@import "./sass/Layout/Grid";
+@import "./sass/Layout/Scroll";
+@import "./sass/Layout/UpArrow";
+@import "./sass/Layout/ColorB";
+
+@import "./sass/Layout/Style4AllElement";
+
+@import "./sass/Components/Button";
+
+@import "./sass/Layout/Nav";
+@import "./sass/Pages/Home";
+@import "./sass/Layout/Footer";
+}
+//sass --watch L:\Anadolu_Kudus\src\assets\sass:L:\Anadolu_Kudus\src\assets\css
+//sass --watch L:\Anadolu_Kudus\src\assets\sass:L:\Anadolu_Kudus\src\assets\css --style compressed
